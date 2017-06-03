@@ -1,0 +1,4 @@
+_mac_apps=( ${(Q)"${(z)$(<<\EO:_mac_apps
+
+EO:_mac_apps
+)}"} )
