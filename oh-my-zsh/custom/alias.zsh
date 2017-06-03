@@ -237,11 +237,11 @@ alias r="refreshzrc"
 alias tat='tmux new-session -As $(basename "$PWD" | tr . -)' # will attach if session exists, or create a new session
 alias tmuxr="tmux source-file ~/.tmux.conf"
 alias tmuxka="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
-alias edittc="vim ~/.tmux.conf && tmuxr"
+alias edittc="vim ~/dotfiles/tmux.conf && tmuxr"
 
-alias editzrc="vim ~/.zshrc && refreshzrc"
-alias refreshzrc="source ~/.zshrc && echo 'profile refreshed'"
-alias showzrc="cat ~/.zshrc"
+alias editzrc="vim ~/dotfiles/zshrc && refreshzrc"
+alias refreshzrc="source ~/dotfiles/zshrc && echo 'profile refreshed'"
+alias showzrc="cat ~/dotfiles/zshrc"
 
 cdlsFunction() {
   cd "$1";
@@ -251,7 +251,7 @@ cdlsFunction() {
 alias cdls=cdlsFunction
 
 addtobpFunction() {
-  cat >> ~/.zshrc;
+  cat >> ~/dotfiles/zshrc;
   refreshzrc;
 }
 alias addtozrc=addtobpFunction
@@ -352,5 +352,9 @@ ${lcyan}tmuxka ${cyan}- Kills all sessions                            ${default}
 ${lcyan}edittc ${cyan}- Opens tmux conf and refreshes after edit      ${default}vim ~/.tmux.conf && tmuxr      
 ${default}'"
 
+fgfunc() {
+  sudo find "$1" -iname "$2";
+}
+alias fg=fgfunc
 
 
