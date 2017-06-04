@@ -514,6 +514,8 @@ addtobpFunction() {
 }
 alias addtozrc=addtobpFunction
 
+alias editi3='vim ~/.config/i3/config && i3-msg reload | grep -Po --color=never "\"(.*)\"" | sed -e "s/\"//g"'
+
 autoload -U compinit && compinit
 zmodload -i zsh/complist
 
@@ -672,4 +674,4 @@ fgfunc() {
 alias fg=fgfunc
 #alias grep=grep --color=always
 export GREP_COLOR='1;32'
-export LS_COLORS='ex=38;5;15:di=38;5;104;48;5;235:ow=38;5;147;48;5;238:ln=38;5;45:or=38;5;196:*.jsx=38;5;43:*.js=38;5;42:*.png=38;5;214'
+export LS_COLORS='ex=38;5;153:di=38;5;104;48;5;235:ow=38;5;147;48;5;238:ln=38;5;45:or=38;5;196:*.jsx=38;5;43:*.js=38;5;42:*.json=38;5;31:*.png=38;5;214:*.jpg=38;5;208'
