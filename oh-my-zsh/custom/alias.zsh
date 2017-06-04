@@ -495,6 +495,8 @@ alias tmuxr="tmux source-file ~/.tmux.conf"
 alias tmuxka="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
 alias edittc="vim ~/dotfiles/tmux.conf && tmuxr"
 
+alias editvim="vim ~/dotfiles/vimrc"
+
 alias editzrc="vim ~/dotfiles/oh-my-zsh/custom/alias.zsh && refreshzrc"
 alias editzrcm="vim ~/dotfiles/zshrc && refreshzrc"
 alias refreshzrc="source ~/dotfiles/zshrc && echo 'profile refreshed'"
@@ -514,7 +516,7 @@ addtobpFunction() {
 }
 alias addtozrc=addtobpFunction
 
-alias editi3='vim ~/.config/i3/config && i3-msg reload | grep -Po --color=never "\"(.*)\"" | sed -e "s/\"//g"'
+alias editi3='vim ~/dotfiles/config/i3/config && i3-msg reload | grep -Po --color=never "\"(.*)\"" | sed -e "s/\"//g"'
 
 autoload -U compinit && compinit
 zmodload -i zsh/complist
@@ -570,6 +572,7 @@ alias \?="printf '${default}Here are your available help commands:
 ${lgreen}zsh?
 ${yellow}chrome?
 ${lmagenta}i3?
+${c202}vim?
 ${lcyan}tmux?
 ${lred}git?
 ${c1}c${c214}o${c226}l${c46}o${c32}r${c27}s${c62}?${default}
@@ -592,6 +595,10 @@ ${lmagenta}vol${default}: alsamixer ${cyan}- Sound and volume control
 ${lmagenta}nmcli --help${default}: nmcli ${cyan}- Network and wifi manager
 ${lmagenta}editi3 ${cyan}- Opens i3 config in vim and refreshes profile
 ${default}\n'"
+
+alias vim\?="printf 'Here are your basic functionality commands for vim:
+${c202}editvim:${cyan} Opens vimrc in vim ${c226}META!${defalut}
+'"
 
 alias tmux\?="printf '${lcyan}ta     ${cyan}- Attaches to running session                ${default}tmux attach -t \${name}
 ${lcyan}tn     ${cyan}- Creates a new session with name               ${default}tmux new -s \${name}          
