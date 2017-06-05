@@ -19,3 +19,9 @@
 [submodule "vim/pack/ivtpz/start/ctrlp.vim"]
 	path = vim/pack/ivtpz/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
+[submodule "vim/pack/ivtpz/start/vim-airline"]
+	path = vim/pack/ivtpz/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim/pack/ivtpz/start/vim-airline-themes"]
+	path = vim/pack/ivtpz/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
