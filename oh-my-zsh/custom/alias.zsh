@@ -15,7 +15,7 @@ alias finder_h='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll
 
 alias sudo="sudo "
 
-
+alias .='cd ~/dotfiles && vim'
 
 # Set vim as default
 
@@ -42,7 +42,6 @@ alias nd="node debug"
 
 
 # Github commands
-
 alias gb="git branch"
 
 alias gs="git status"
@@ -83,7 +82,7 @@ alias gpum="git pull origin master"
 
 alias gprb="git pull --rebase origin master"
 
-alias gd="git diff"
+alias gd="git difftool"
 
 alias gpo="git push origin"
 
@@ -575,11 +574,16 @@ ${lmagenta}i3?
 ${c202}vim?
 ${lcyan}tmux?
 ${lred}git?
+${c35}shortcuts?
 ${c1}c${c214}o${c226}l${c46}o${c32}r${c27}s${c62}?${default}
 ${c1}c${c202}o${c214}l${c226}o${c46}r${c44}s${c32}2${c27}5${c56}6${c90}?${default}
 '"
 
-alias zsh\?="printf 'Use the following commands to edit your bash profile:
+
+alias shortcuts\?="printf 'Here are your terminal shortcuts:
+${c35}fg ${c255}- searches for a file name ${c39}- (dir, name)
+'"
+alias zsh\?="printf 'Use the following commands to edit your zsh profile:
 ${lmagenta}refreshzrc${default}: Refreshes your bash profile
 ${cyan}showzrc${default}: Logs your bash profile to the terminal
 ${green}editzrc${default}: Opens your zsh custom profile in the vim editor
@@ -587,13 +591,17 @@ ${lgreen}editzrcm${default}: Opens your zsh main profile in the vim editor
 ${yellow}addtozrc${default}: Creates a new input to be appended to the bottom of your bash profile. Use ${yellow}CTRL + D${default} to save to the file, and ${yellow}CTRL + C${default} to cancel out and not save.\n'"
 
 alias chrome\?="printf '${yellow}Useful Chrome shortucts
-${red}CTRL + N${default} open an incognito tab 
+${red}CTRL + N${default} open an incognito tab
 '"
 
 alias i3\?="printf 'Here are your basic functionality commands for i3:
-${lmagenta}vol${default}: alsamixer ${cyan}- Sound and volume control
-${lmagenta}nmcli --help${default}: nmcli ${cyan}- Network and wifi manager
-${lmagenta}editi3 ${cyan}- Opens i3 config in vim and refreshes profile
+${cyan}vol${default}: alsamixer ${lmagenta}- Sound and volume control
+${cyan}nmcli --help${default}: nmcli ${lmagenta}- Network and wifi manager
+${cyan}nmcli d wifi list${default}: see available WiFi ${lmagenta}- Network and wifi manager
+${cyan}nmcli d down|up <SavedWifiConn>${default}: connect or disconnect by saved name ${lmagenta}- Network and wifi manager
+${cyan}nmcli d disconnect|connect <WifiInterface>${default}: connect or disconnect by name ${lmagenta}- Network and wifi manager
+${cyan}nmcli c${default}: view saved connections${lmagenta}- Network and wifi manager
+${cyan}editi3 ${lmagenta}- Opens i3 config in vim and refreshes profile
 ${default}\n'"
 
 alias vim\?="printf 'Here are your basic functionality commands for vim:
@@ -601,12 +609,12 @@ ${c202}editvim:${cyan} Opens vimrc in vim ${c226}META!${defalut}
 '"
 
 alias tmux\?="printf '${lcyan}ta     ${cyan}- Attaches to running session                ${default}tmux attach -t \${name}
-${lcyan}tn     ${cyan}- Creates a new session with name               ${default}tmux new -s \${name}          
-${lcyan}tk     ${cyan}- Kills sessions by name                        ${default}tmux kill-session -t \${name}  
-${lcyan}tat    ${cyan}- Attach or create session if it does not exist ${default}tmux new-session -As           
-${lcyan}tmuxr  ${cyan}- refreshes tmux conf                           ${default}tmux source-file ~/.tmux.conf  
-${lcyan}tmuxka ${cyan}- Kills all sessions                            ${default}tmux ls | kill-session         
-${lcyan}edittc ${cyan}- Opens tmux conf and refreshes after edit      ${default}vim ~/.tmux.conf && tmuxr      
+${lcyan}tn     ${cyan}- Creates a new session with name               ${default}tmux new -s \${name}
+${lcyan}tk     ${cyan}- Kills sessions by name                        ${default}tmux kill-session -t \${name}
+${lcyan}tat    ${cyan}- Attach or create session if it does not exist ${default}tmux new-session -As
+${lcyan}tmuxr  ${cyan}- refreshes tmux conf                           ${default}tmux source-file ~/.tmux.conf
+${lcyan}tmuxka ${cyan}- Kills all sessions                            ${default}tmux ls | kill-session
+${lcyan}edittc ${cyan}- Opens tmux conf and refreshes after edit      ${default}vim ~/.tmux.conf && tmuxr
 ${default}'"
 
 alias git\?="printf '
@@ -633,7 +641,7 @@ ${white}gprb ${lred}- git pull --rebase origin master
 ${white}gd ${lred}- git diff
 ${white}gpo ${lred}- git push origin
 ${white}gob ${lred}- git checkout -b
-'" 
+'"
 
 alias colors\?="printf '
 ${default}default
@@ -669,7 +677,7 @@ allcolors() {
       sp="\n"
     fi
     cn=c${i}
-    printf ${(P)cn}c${i} 
+    printf ${(P)cn}c${i}
     printf ${sp}
   done
 }
