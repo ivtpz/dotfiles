@@ -1,4 +1,4 @@
 **/*.swp
 *.swp
 .zshrc.swp
-vim/.netrwhist
+vim/.netr*
