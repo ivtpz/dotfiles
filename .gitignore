@@ -1,4 +1,5 @@
 **/*.swp
 *.swp
 .zshrc.swp
-vim/.netr*
+.gitmodules.orig
+vim/.netrwhist
