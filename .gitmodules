@@ -22,3 +22,6 @@
 [submodule "vim/pack/ivtpz/start/vim-vinegar"]
 	path = vim/pack/ivtpz/start/vim-vinegar
 	url = https://github.com/tpope/vim-vinegar.git
+[submodule "vim/pack/ivtpz/start/ack.vim"]
+    path = vim/pack/ivtpz/start/ack.vim
+    url = https://github.com/mileszs/ack.vim.git

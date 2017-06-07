@@ -618,6 +618,7 @@ ${lcyan}edittc ${cyan}- Opens tmux conf and refreshes after edit      ${default}
 ${default}'"
 
 alias git\?="printf '
+${white}Removing submodule ${lred}\ngit submodule deinit <name>\ngit rm <name>\nrm -rf .git/modules/<name>\n
 ${white}gb ${lred}- git branch
 ${white}gs ${lred}- git status
 ${white}ga ${lred}- git add
