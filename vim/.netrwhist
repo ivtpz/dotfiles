@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/ivey/dotfiles'
+let g:netrw_dirhist_2='/home/ivey/dotfiles/vim/pack/ivtpz/start/neoformat'
+let g:netrw_dirhist_3='/home/ivey/dotfiles/vim/pack/ivtpz'
+let g:netrw_dirhist_4='/home/ivey/dotfiles/vim/pack'
+let g:netrw_dirhist_5='/home/ivey/dotfiles/vim'
+let g:netrw_dirhist_6='/home/ivey/dotfiles'
+let g:netrw_dirhist_7='/home/ivey'
+let g:netrw_dirhist_8='/home/ivey/dotfiles/oh-my-zsh'

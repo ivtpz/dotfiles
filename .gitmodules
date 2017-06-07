@@ -1,6 +1,3 @@
-[submodule "vim/pack/ivtpz/start/nerd-tree"]
-	path = vim/pack/ivtpz/start/nerd-tree
-	url = https://github.com/scrooloose/nerdtree.git
 [submodule "vim/pack/ivtpz/start/vim-javascript-syntax"]
 	path = vim/pack/ivtpz/start/vim-javascript-syntax
 	url = https://github.com/jelera/vim-javascript-syntax.git
@@ -22,6 +19,6 @@
 [submodule "vim/pack/ivtpz/start/vim-airline-themes"]
 	path = vim/pack/ivtpz/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
-[submodule "vim/pack/ivtpz/start/ack.vim"]
-	path = vim/pack/ivtpz/start/ack.vim
-	url = https://github.com/mileszs/ack.vim
+[submodule "vim/pack/ivtpz/start/vim-vinegar"]
+	path = vim/pack/ivtpz/start/vim-vinegar
+	url = https://github.com/tpope/vim-vinegar.git

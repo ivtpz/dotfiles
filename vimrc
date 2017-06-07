@@ -14,7 +14,6 @@ endif
 
 autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
 autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 
 
@@ -132,6 +131,7 @@ set showmatch
 
 " Set built-in file system explorer to use layout similar to the NERDTree plugin
 let g:netrw_liststyle=3
+let g:netrw_banner=0
 
 " Always highlight column 80 so it's easier to see where
 " cutoff appears on longer screens
@@ -232,7 +232,7 @@ let g:gitgutter_sign_column_always = 1
 highlight clear SignColumn
 
 " Searching the file system
-map <leader>' :NERDTreeToggle<cr>
+" map <leader>' :NERDTreeToggle<cr>
 
 " Tabularize
 map <Leader>e :Tabularize /=<cr>
