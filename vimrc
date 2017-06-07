@@ -270,6 +270,8 @@ sunmap e
 " Clear search buffer
 :nnoremap § :nohlsearch<cr>
 
+nmap <leader>fd :%!python -m json.tool
+
 " Command to use sudo when needed
 cmap w!! %!sudo tee > /dev/null %
 
