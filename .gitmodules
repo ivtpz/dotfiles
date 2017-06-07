@@ -13,9 +13,6 @@
 [submodule "vim/pack/ivtpz/start/neoformat"]
 	path = vim/pack/ivtpz/start/neoformat
 	url = https://github.com/sbdchd/neoformat.git
-[submodule "vim/pack/ivtpz/start/ack.vim"]
-	path = vim/pack/ivtpz/start/ack.vim
-	url = https://github.com/mileszs/ack.vim.git
 [submodule "vim/pack/ivtpz/start/ctrlp.vim"]
 	path = vim/pack/ivtpz/start/ctrlp.vim
 	url = https://github.com/ctrlpvim/ctrlp.vim.git
@@ -25,3 +22,6 @@
 [submodule "vim/pack/ivtpz/start/vim-airline-themes"]
 	path = vim/pack/ivtpz/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/pack/ivtpz/start/ack.vim"]
+	path = vim/pack/ivtpz/start/ack.vim
+	url = https://github.com/mileszs/ack.vim

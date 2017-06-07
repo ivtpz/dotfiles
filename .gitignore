@@ -1,3 +1,4 @@
 **/*.swp
 *.swp
 .zshrc.swp
+.gitmodules.orig
