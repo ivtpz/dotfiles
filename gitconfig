@@ -11,11 +11,9 @@
 [core]
 	pager = less -R
 [diff]
-	tool = meld
+	tool = vimdiff
 [difftool]
     prompt = false
-[difftool "meld"]
-    cmd = meld "$LOCAL" "$REMOTE"
 [merge]
     tool = meld
 [mergetool "meld"]
