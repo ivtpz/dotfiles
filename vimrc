@@ -1,5 +1,6 @@
 syntax enable
 set number
+set rnu
 colorscheme monokai
 filetype plugin indent on
 set foldmethod=syntax
