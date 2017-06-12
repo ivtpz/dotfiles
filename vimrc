@@ -17,6 +17,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 
 let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+" Line wrap cursor
 
 " Settings {{{
 " Switch syntax highlighting on, when the terminal has colors
@@ -147,6 +148,7 @@ set colorcolumn=100
 "set background=light
 "colorscheme Tomorrow-Night
 
+let g:airline_theme = "badwolf"
 " Font patch for airline powerline
 let g:airline_powerline_fonts = 1
 
@@ -413,3 +415,7 @@ fun! SetDiffColors()
 endfun
 autocmd FilterWritePre * call SetDiffColors()
 " }}}
+" Cursor wrap
+set ww+=>,l
+set ww+=<,h
+set scrolloff=1
