@@ -40,8 +40,9 @@ alias vlc="open -a VLC"
 alias nd="node debug"
 
 
-
 # Github commands
+alias gbh='for k in `git branch | perl -pe s/^..//`; do echo -e `git show --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" $k -- | head -n 1`\\t$k; done | sort -r'
+
 alias gb="git branch"
 
 alias gs="git status"
@@ -75,6 +76,8 @@ alias gm="git merge"
 alias gp="git push"
 
 alias gpom="git push origin master"
+
+alias gpub="git push -u origin HEAD"
 
 alias gpu="git pull"
 
@@ -619,6 +622,7 @@ ${default}'"
 
 alias git\?="printf '
 ${white}Removing submodule ${lred}\ngit submodule deinit <name>\ngit rm <name>\nrm -rf .git/modules/<name>\n
+${white}gbh ${lred}- git branch history, shows last edit date for each branch
 ${white}gb ${lred}- git branch
 ${white}gs ${lred}- git status
 ${white}ga ${lred}- git add
@@ -636,6 +640,7 @@ ${white}grv ${lred}- git revert
 ${white}gm ${lred}- git merge
 ${white}gp ${lred}- git push
 ${white}gpom ${lred}- git push origin master
+${white}gpub ${lred}- git push -u origin HEAD
 ${white}gpu ${lred}- git pull
 ${white}gpum ${lred}- git pull origin master
 ${white}gprb ${lred}- git pull --rebase origin master

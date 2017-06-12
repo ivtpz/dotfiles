@@ -16,7 +16,7 @@ autocmd FileType javascript set formatprg=prettier-eslint\ --stdin
 autocmd StdinReadPre * let s:std_in=1
 autocmd Filetype javascript setlocal ts=2 sw=2 sts=2
 
-
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 " Settings {{{
 " Switch syntax highlighting on, when the terminal has colors
@@ -98,7 +98,7 @@ set guioptions-=T
 " UTF encoding
 set encoding=utf-8
 
-set guifont=Source\ Code\ Pro\ for\ Powerline "escaped spaces
+set guifont=Source\ Code\ Pro\ for\ Powerline\:h14 "escaped spaces
 
 " Autoload files that have changed outside of vim
 set autoread
@@ -182,8 +182,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint', 'flow']
-let g:syntastic_javascript_flow_exe = 'flow'
+let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_javascript_flow_exe = 'flow'
 let g:syntastic_quiet_messages = { "level": 'warning' }
 
 " CtrlP
@@ -241,12 +241,12 @@ map <Leader>es :Tabularize /=\zs<cr>
 map <Leader>cs :Tabularize /:\zs<cr>
 
 " Camel Case Motion (for dealing with programming code)
-map <silent> w <Plug>CamelCaseMotion_w
-map <silent> b <Plug>CamelCaseMotion_b
-map <silent> e <Plug>CamelCaseMotion_e
-sunmap w
-sunmap b
-sunmap e
+"map <silent> w <Plug>CamelCaseMotion_w
+"map <silent> b <Plug>CamelCaseMotion_b
+"map <silent> e <Plug>CamelCaseMotion_e
+"sunmap w
+"sunmap b
+"sunmap e
 " }}}
 
 " Mappings {{{
