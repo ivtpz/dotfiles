@@ -187,7 +187,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_javascript_flow_exe = 'flow'
 let g:syntastic_quiet_messages = { "level": 'warning' }
-
+" let g:syntastic_debug = 3
 " CtrlP
 map <leader>t <C-p>
 map <leader>y :CtrlPBuffer<cr>
