@@ -25,3 +25,6 @@
 [submodule "vim/pack/ivtpz/start/ack.vim"]
     path = vim/pack/ivtpz/start/ack.vim
     url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/pack/ivtpz/start/ale"]
+	path = vim/pack/ivtpz/start/ale
+	url = https://github.com/w0rp/ale
