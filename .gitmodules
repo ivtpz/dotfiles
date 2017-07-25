@@ -4,9 +4,6 @@
 [submodule "vim/pack/ivtpz/start/vim-javascript"]
 	path = vim/pack/ivtpz/start/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
-[submodule "vim/pack/ivtpz/start/syntastic"]
-	path = vim/pack/ivtpz/start/syntastic
-	url = https://github.com/vim-syntastic/syntastic.git
 [submodule "vim/pack/ivtpz/start/neoformat"]
 	path = vim/pack/ivtpz/start/neoformat
 	url = https://github.com/sbdchd/neoformat.git
@@ -25,3 +22,6 @@
 [submodule "vim/pack/ivtpz/start/ack.vim"]
     path = vim/pack/ivtpz/start/ack.vim
     url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/pack/ivtpz/start/ale"]
+	path = vim/pack/ivtpz/start/ale
+	url = https://github.com/w0rp/ale

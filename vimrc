@@ -271,6 +271,7 @@ map <Leader>cs :Tabularize /:\zs<cr>
 " :noremap l k
 " :noremap ; l
 " Clear search buffer
+:noremap £ :norm i#<CR>
 :nnoremap § :nohlsearch<cr>
 
 nmap <leader>fd :%!python -m json.tool

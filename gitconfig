@@ -15,8 +15,9 @@
 [difftool]
     prompt = false
 [merge]
-    tool = meld
+  tool = meld
+[mergetool]
+  prompt = false
 [mergetool "meld"]
-    # Choose one of these 2 lines
-    cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-    # cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+  trustExitCode = true
+  cmd = open -W -a Meld --args --auto-merge \"$PWD/$LOCAL\" \"$PWD/$BASE\" \"$PWD/$REMOTE\" --output=\"$PWD/$MERGED\"
