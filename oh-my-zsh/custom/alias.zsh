@@ -692,7 +692,7 @@ alias colors256\?=allcolors
 fgfunc() {
   sudo find "$1" -iname "$2";
 }
-alias fg=fgfunc
+alias fndg=fgfunc
 #alias grep=grep --color=always
 export GREP_COLOR='1;32'
 export LS_COLORS='ex=38;5;153:di=38;5;104;48;5;235:ow=38;5;147;48;5;238:ln=38;5;45:or=38;5;196:*.jsx=38;5;43:*.js=38;5;42:*.json=38;5;31:*.png=38;5;214:*.jpg=38;5;208'

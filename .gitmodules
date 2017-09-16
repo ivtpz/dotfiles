@@ -25,3 +25,6 @@
 [submodule "vim/pack/ivtpz/start/ale"]
 	path = vim/pack/ivtpz/start/ale
 	url = https://github.com/w0rp/ale
+[submodule "vim/pack/ivtpz/start/vim-livedown"]
+	path = vim/pack/ivtpz/start/vim-livedown
+	url = https://github.com/shime/vim-livedown.git
