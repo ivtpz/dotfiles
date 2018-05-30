@@ -86,3 +86,4 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vol="alsamixer"
+alias ls="ls --color=auto"
