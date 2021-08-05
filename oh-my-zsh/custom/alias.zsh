@@ -13,9 +13,6 @@ alias finder_h='defaults write com.apple.Finder AppleShowAllFiles FALSE; killAll
 
 # See http://www.shellperson.net/using-sudo-with-an-alias/
 
-alias sudo="sudo "
-
-alias .='cd ~/dotfiles && vim'
 
 # Set vim as default
 
@@ -700,5 +697,4 @@ export LS_COLORS='ex=38;5;153:di=38;5;104;48;5;235:ow=38;5;147;48;5;238:ln=38;5;
 alias ls="ls -G"
 alias letsgo="cd ~/web-platform && code ."
 alias rancher\?="reattach-to-user-namespace open ~/Desktop/Release-to-rancher-instructions.png"
-
-
+source /snap/google-cloud-sdk/current/completion.zsh.inc
