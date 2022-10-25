@@ -68,6 +68,8 @@ alias grs="git reset"
 
 alias grv="git revert"
 
+alias gcp="git cherry-pick"
+
 alias gm="git merge"
 
 alias gp="git push"
@@ -88,7 +90,7 @@ alias gpo="git push origin"
 
 alias gob="git checkout -b"
 
-
+alias gsa="git rev-list --all | xargs git grep"
 
 # Docker
 
@@ -492,7 +494,7 @@ alias r="refreshzrc"
 alias tat='tmux new-session -As $(basename "$PWD" | tr . -)' # will attach if session exists, or create a new session
 alias tmuxr="tmux source-file ~/.tmux.conf"
 alias tmuxka="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
-alias edittc="vim ~/dotfiles/tmux.conf && tmuxr"
+alias edittc="vim ~/dotfiles/tmux.base.conf && tmuxr"
 
 alias editvim="vim ~/dotfiles/vimrc"
 
@@ -634,6 +636,7 @@ ${white}gchm ${lred}- git checkout master
 ${white}gt ${lred}- git tag
 ${white}grs ${lred}- git reset
 ${white}grv ${lred}- git revert
+${white}gcp ${lred}- git cherry-pick
 ${white}gm ${lred}- git merge
 ${white}gp ${lred}- git push
 ${white}gpom ${lred}- git push origin master
@@ -697,4 +700,9 @@ export LS_COLORS='ex=38;5;153:di=38;5;104;48;5;235:ow=38;5;147;48;5;238:ln=38;5;
 alias ls="ls -G"
 alias letsgo="cd ~/web-platform && code ."
 alias rancher\?="reattach-to-user-namespace open ~/Desktop/Release-to-rancher-instructions.png"
+alias lzd=lazydocker
 source /snap/google-cloud-sdk/current/completion.zsh.inc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export N_PREFIX="$HOME/.local"
+export NODE_OPTIONS=--max_old_space_size=16192
