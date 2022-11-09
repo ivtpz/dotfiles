@@ -12,8 +12,7 @@ ZSH_THEME="af-magic"
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
+export PATH="$HOME/.local/bin:$PATH"
 # eval "$(pyenv virtualenv-init -)"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -93,4 +92,4 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vol="alsamixer"
 alias ls="ls --color=auto"
-
+alias lzd="lazydocker"

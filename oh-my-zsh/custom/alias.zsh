@@ -701,7 +701,6 @@ alias ls="ls -G"
 alias letsgo="cd ~/web-platform && code ."
 alias rancher\?="reattach-to-user-namespace open ~/Desktop/Release-to-rancher-instructions.png"
 alias lzd=lazydocker
-source /snap/google-cloud-sdk/current/completion.zsh.inc
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export N_PREFIX="$HOME/.local"
