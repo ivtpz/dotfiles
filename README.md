@@ -6,7 +6,7 @@ Config files for vim, i3, tmux, and zsh
 # Clone the directory into ~/
 git clone https://github.com/ivtpz/dotfiles.git
 
-# Install vim packages (expects vim 8+)
+# Install vim packages and tmux plugins (expects vim 8+)
 cd dotfiles
 git submodule init
 git submodule update
@@ -17,3 +17,9 @@ git submodule update
 # Install fonts for vim powerline
 # See https://github.com/powerline/fonts
 ```
+
+## Tmux Features
+- **tmux-resurrect**: Save and restore tmux sessions
+  - Save: `prefix + S` (Ctrl-b + S)
+  - Restore: `prefix + R` (Ctrl-b + R)
+  - Automatically captures pane contents

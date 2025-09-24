@@ -495,7 +495,7 @@ alias r="refreshzrc"
 alias tat='tmux new-session -As $(basename "$PWD" | tr . -)' # will attach if session exists, or create a new session
 alias tmuxr="tmux source-file ~/.tmux.conf"
 alias tmuxka="tmux ls | cut -d : -f 1 | xargs -I {} tmux kill-session -t {}" # tmux kill all sessions
-alias edittc="vim ~/dotfiles/tmux.conf && tmuxr"
+alias edittc="vim ~/dotfiles/tmux.base.conf && tmuxr"
 
 alias editvim="vim ~/dotfiles/vimrc"
 
